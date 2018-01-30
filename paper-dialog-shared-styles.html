@@ -59,16 +59,19 @@ Custom property | Description | Default
         position: relative;
         margin: 0;
         @apply --paper-font-title;
-
-        @apply --paper-dialog-title;
       }
 
       :host > ::slotted(*:first-child) {
         margin-top: 24px;
       }
 
+
       :host > ::slotted(*:last-child) {
         margin-bottom: 24px;
+      }
+
+      :host > ::slotted(h2) {
+        @apply --paper-dialog-title;
       }
 
       :host > ::slotted(.buttons) {
